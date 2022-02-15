@@ -28,7 +28,6 @@
     "fs-extra": "^10.0.0",
     "html-webpack-plugin": "^5.5.0",
     "identity-obj-proxy": "^3.0.0",
-    "jest": "^27.4.3",
     "jest-resolve": "^27.4.2",
     "jest-watch-typeahead": "^1.0.0",
     "mini-css-extract-plugin": "^2.4.5",
@@ -86,6 +85,7 @@
     "@wojtekmaj/enzyme-adapter-react-17": "^0.6.6",
     "babel-plugin-react-remove-properties": "^0.3.0",
     "enzyme": "^3.11.0",
+    "jest": "^27.4.7",
     "jest-watch-typeahead": "^0.6.5"
   },
   "author": "",
@@ -145,7 +145,14 @@
     "env": {
       "production": {
         "plugins": [
-          ["react-remove-properties", {"properties": ["data-test"]}]
+          [
+            "react-remove-properties",
+            {
+              "properties": [
+                "data-test"
+              ]
+            }
+          ]
         ]
       }
     },
